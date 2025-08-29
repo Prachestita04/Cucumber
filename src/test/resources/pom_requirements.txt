@@ -1,0 +1,18 @@
+1. Cucumber Junit - Unit Testing Framework
+2. Cucumber Java - BDD Framework - Behaviour Driven Development
+3. Maven Compiler Plugin - Compiling the code
+4. Maven Surefire Plugin - Test report generate
+
+Cucumber java skeleton
+https://github.com/cucumber/cucumber-java-skeleton/blob/main/maven/pom.xml
+
+Gherkin Language - which is english language
+Feature, Scenario, Outline, Given, When, Then
+Given - it defines the prerequisite of a test case
+When - take one condition
+Then - after that the next step or result
+
+undefinedStepExecution
+PendingException
+
+{string} - Cucumber expression
