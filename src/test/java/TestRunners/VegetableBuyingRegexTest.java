@@ -6,10 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "C:\\Users\\user\\IdeaProjects\\Cucumber\\src\\test\\resources\\Appfeatures\\vegetable_buying.feature",
+        features = "C:\\Users\\user\\IdeaProjects\\Cucumber\\src\\test\\resources\\Appfeatures\\vegetable_buying_regex.feature",
         glue = "StepDefinitions",
         plugin = {"pretty"}
 )
 
-public class VegetableBuyingTest {
+public class VegetableBuyingRegexTest {
 }
