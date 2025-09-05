@@ -41,11 +41,11 @@ public class DataTableStep {
     public void userAddsMilksAndBakeryProductsToTheCart(DataTable dataTable) {
         List<List<String>> milkList = dataTable.asLists(String.class);
 //        int i =1;
-        for(List<String> eachmilkProduct: milkList){
-            System.out.println("Names: "+" "+milkList.get(0));
-//            System.out.println("Milk product Number: "+i+" "+eachmilkProduct);
+        for(List<String> eachMilkProduct: milkList){
+            System.out.println("Product Names: "+" "+eachMilkProduct.get(0));
+//            System.out.println("Milk product Number: "+i+" "+eachMilkProduct);
 //            i++;
-//            System.out.println(eachmilkProduct);
+//            System.out.println(eachMilkProduct);
         }
 
     }
@@ -54,11 +54,11 @@ public class DataTableStep {
     public void userAddsElectronicsProductsToTheCart(DataTable dataTable) {
         List<List<String>> elctronicsList = dataTable.asLists(String.class);
 //        int i =1;
-        for(List<String> eachelectronic: elctronicsList){
-            System.out.println("Electronic Names: "+" "+elctronicsList.get(0));
-//            System.out.println("Electronic Number: "+i+" "+eachelectronic);
+        for(List<String> eachElectronic: elctronicsList){
+            System.out.println("Electronic Names: "+" "+eachElectronic.get(0));
+//            System.out.println("Electronic Number: "+i+" "+eachElectronic);
 //            i++;
-//            System.out.println(eachelectronic);
+//            System.out.println(eachElectronic);
         }
     }
 }
