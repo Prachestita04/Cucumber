@@ -1,0 +1,68 @@
+background keyword - should be a part of feature file
+
+hooks keyword and its implementation also--
+not part of feature file
+it has to be written in runner file
+can be written in step definition class
+or it can be written in a separate configuration class
+
+Note: -
+1. tags in cucumber is equivalent to groups in testng.
+2. hooks in cucumber is equivalent to annotation in testng.
+3. order in cucumber is equivalent to priority in testng
+4. Scenario implementation in cucumber is equivalent to @Test in testng
+5. Scenario means actually a test case only
+6. background actually consists of shared pre-requisites(@Given)
+and shared test steps(@When)
+7. Given - pre-requisites, When - Test steps, Then - expected result
+8. Hooks with Tags in cucumber is equivalent to annotations with groups in testng
+Ex: - @Before("@Login") is equivalent to @Test(groups='login')
+9.gluecode means step definition.
+
+
+*setup
+    will be executed before each scenario - - @Before
+*teardown
+     will be executed after each Scenario
+
+@Before
+m1(order=1)
+@Before
+m2(order=2)
+
+@After
+m1(order=1)
+@After
+m2(order=2)
+
+@BeforeStep -- Before each step of the scenario
+@AfterStep -- after each step of the scenario
+
+@Before
+@BeforeStep
+Given I have search field on the Amazon page
+@AfterStep
+@BeforeStep
+When I search for a product with name "Apple Macbook Pro" and price 1000
+@AfterStep
+@BeforeStep
+Then Product with name "Apple Macbook Pro" should be displayed
+@AfterStep
+@After
+
+B(1)
+B(2)
+BS
+Step 1
+AS
+BS
+Step 2
+AS
+BS
+Step 3
+AS
+BS
+Step 4
+AS
+A(1)
+A(2)
