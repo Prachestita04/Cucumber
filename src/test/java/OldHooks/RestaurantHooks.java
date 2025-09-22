@@ -3,6 +3,7 @@ package OldHooks;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 
 public class RestaurantHooks {
     @Before(order = 1)
@@ -11,7 +12,10 @@ public class RestaurantHooks {
     }
 
     @Before(order = 2)
-    public void setupUrl() {
+    public void setupUrl(Scenario example) {
+//        int i=0;
+//        System.out.println(9/i);
+//        System.out.println(example.getName());
         System.out.println("Login to restaurant booking website");
     }
 

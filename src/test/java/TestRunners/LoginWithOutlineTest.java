@@ -8,7 +8,12 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/Appfeatures/test_login.feature",
         glue = "StepDefinitions",
-        plugin = {"pretty"}
+        plugin = {"pretty",
+        "json:target/MyReports/report.json",
+        "junit:target/MyReports/report.xml"}
+
+//        publish = true
+//        monochrome = true
 )
 public class LoginWithOutlineTest {
 }

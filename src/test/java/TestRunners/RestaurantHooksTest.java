@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "C:\\Users\\user\\IdeaProjects\\Cucumber\\src\\test\\resources\\Appfeatures\\restarunat_table_book_hook.feature",
         glue = {"StepDefinitions", "OldHooks"},
-        plugin = {"pretty"}
+        plugin = {"pretty"},
+        publish = true
 )
 
 public class RestaurantHooksTest {
