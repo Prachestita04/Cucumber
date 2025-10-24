@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "C:\\Users\\user\\IdeaProjects\\Cucumber\\src\\test\\resources\\Appfeatures\\watching_movie.feature",
+        features = "C:\\Users\\user\\IdeaProjects\\Cucumber\\src\\test\\resources\\Appfeatures\\watching_movie_hooks_with_steps.feature",
         glue = {"StepDefinitions","OldHooks"}
 )
 

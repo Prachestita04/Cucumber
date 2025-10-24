@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "C:\\Users\\user\\IdeaProjects\\Cucumber\\src\\test\\resources\\Appfeatures\\restarunat_table_book_hook.feature",
+        features = "C:\\Users\\user\\IdeaProjects\\Cucumber\\src\\test\\resources\\Appfeatures\\restaurant_table_book_hook_without_tag.feature",
         glue = {"StepDefinitions", "OldHooks"},
         plugin = {"pretty"},
         publish = true
